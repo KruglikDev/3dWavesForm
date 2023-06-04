@@ -1,0 +1,89 @@
+.container {
+    min-width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-transform: uppercase;
+
+    color: ghostwhite;
+
+    transform: translate(-50%, -50%);
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13px );
+    -webkit-backdrop-filter: blur( 13px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.08 );
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    font-size: 55px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px grey;
+}
+
+.form {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: center;
+    text-shadow: 1px 1px black;
+    cursor: pointer;
+    padding: 10px 50px;
+    margin-top: 50px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    color: aliceblue;
+    background: transparent;
+    box-shadow: 1px 1px 1px black;
+    transition: all .5s;
+    font-family: 'Futura';
+
+    &:hover {
+        color: magenta;
+        transition: all .5s;
+        transform: scale(1.1);
+        box-shadow: 2px 2px black;
+    }
+}
+
+.label {
+    font-weight: bolder;
+    font-size: 24px;
+
+    &:last-of-type {
+        margin-top: 20px;
+    }
+}
+
+.input {
+    padding-left: 20px;
+    color: black;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 22px;
+    transition: all .5s;
+    box-shadow: inset 1px 1px 5px 2px rgba(0, 0, 0, 0.75);
+
+    &:focus-visible {
+        transition: all .5s;
+        outline: thick solid darkmagenta;
+    }
+}
